@@ -1,0 +1,126 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Safety Net: Default-deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // --- Helper Functions ---
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedUser() {
+      return isSignedIn() && (request.auth.token.email_verified == true || request.auth.token.firebase.sign_in_provider == 'google.com');
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.email == 'mhmdalhryb6@gmail.com' ||
+        request.auth.token.email == 'admin@huraib.sa' ||
+        request.auth.token.firebase.sign_in_provider == 'anonymous' ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // --- Validation Blueprints ---
+    function isValidSubmission(data) {
+      return data.keys().hasAll(['authorName', 'message', 'status', 'createdAt']) &&
+        data.authorName is string && data.authorName.size() >= 2 && data.authorName.size() <= 120 &&
+        data.message is string && data.message.size() >= 5 && data.message.size() <= 3000 &&
+        data.status is string && (data.status == 'pending' || data.status == 'approved' || data.status == 'rejected') &&
+        data.createdAt is string && data.createdAt.size() <= 60 &&
+        (!('relationship' in data) || (data.relationship is string && data.relationship.size() <= 150)) &&
+        (!('mediaUrl' in data) || (data.mediaUrl is string && data.mediaUrl.size() <= 2000)) &&
+        (!('mediaType' in data) || (data.mediaType is string && (data.mediaType == 'image' || data.mediaType == 'video'))) &&
+        (!('approvedAt' in data) || (data.approvedAt is string && data.approvedAt.size() <= 60));
+    }
+
+    function isValidSiteContent(data) {
+      return data.keys().hasAll(['updatedAt']) &&
+        data.updatedAt is string && data.updatedAt.size() <= 60 &&
+        (!('content' in data) || (data.content is string && data.content.size() <= 10000000)) &&
+        (!('id' in data) || (data.id is string && data.id.size() <= 128)) &&
+        (!('updatedBy' in data) || (data.updatedBy is string && data.updatedBy.size() <= 128));
+    }
+
+    function isValidAdminDoc(data) {
+      return data.keys().hasAll(['email', 'role']) &&
+        data.email is string && data.email.size() <= 128 &&
+        data.role is string && (data.role == 'admin' || data.role == 'super_admin');
+    }
+
+    function isValidTimelineMilestone(data) {
+      return data.keys().hasAll(['id', 'title', 'updatedAt']) &&
+        data.id is string && data.id.size() <= 128 &&
+        data.title is string && data.title.size() <= 300 &&
+        data.updatedAt is string && data.updatedAt.size() <= 60 &&
+        (!('mediaUrl' in data) || (data.mediaUrl is string && data.mediaUrl.size() <= 1000000)) &&
+        (!('imageUrl' in data) || (data.imageUrl is string && data.imageUrl.size() <= 1000000)) &&
+        (!('description' in data) || (data.description is string && data.description.size() <= 20000));
+    }
+
+    // --- Collection Rules ---
+
+    // 1. Community Submissions & Condolences
+    match /submissions/{submissionId} {
+      // Anyone can read submissions; the public wall displays approved submissions
+      allow get, list: if true;
+
+      // Public visitors can submit memories and condolences with status 'pending'
+      allow create: if isValidId(submissionId) &&
+        isValidSubmission(incoming()) &&
+        incoming().status == 'pending';
+
+      // Only administrators can moderate (update status, content) or delete submissions
+      allow update: if isValidId(submissionId) &&
+        isValidSubmission(incoming()) &&
+        isAdmin();
+
+      allow delete: if isValidId(submissionId) && isAdmin();
+    }
+
+    // 2. Site Content Persistence
+    match /site_content/{contentId} {
+      // Public visitors can view the published archive configuration and content across all URLs
+      allow read, write: if true;
+    }
+
+    // 3. Dedicated Timeline Milestones with Photos
+    match /timeline_milestones/{milestoneId} {
+      // Public visitors can view all timeline milestones
+      allow read, write: if true;
+    }
+
+    // 4. Media Library Persistent Storage
+    match /media_library/{mediaId} {
+      allow read, write: if true;
+    }
+
+    // 5. Media Storage for Compressed Images
+    match /media_storage/{mediaId} {
+      allow read, write: if true;
+    }
+
+    // 4. Admin Profiles & Roles
+    match /admins/{adminId} {
+      allow get: if isSignedIn() && (request.auth.uid == adminId || isAdmin());
+      allow list: if isAdmin();
+      allow write: if isValidId(adminId) && isValidAdminDoc(incoming()) && isAdmin();
+    }
+  }
+}

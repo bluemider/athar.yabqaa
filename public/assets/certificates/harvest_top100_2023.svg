@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#854D0E" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="#FFFDF7" />
+  <rect x="25" y="25" width="750" height="510" rx="8" fill="none" stroke="url(#hGold)" stroke-width="4" />
+  <rect x="35" y="35" width="730" height="490" rx="6" fill="none" stroke="#1E293B" stroke-width="1.5" />
+
+  <text x="400" y="85" fill="#854D0E" font-size="20" font-family="serif" font-weight="bold" text-anchor="middle">HARVEST COLLEGE INTERNATIONAL</text>
+  <text x="400" y="115" fill="#B91C1C" font-size="18" font-family="Cairo, sans-serif" font-weight="bold" text-anchor="middle">شهادة فخرية عليا | BEST AWARD 2023</text>
+  <line x1="220" y1="130" x2="580" y2="130" stroke="#D4AF37" stroke-width="1.5" />
+
+  <text x="400" y="175" fill="#475569" font-size="16" font-family="Cairo, sans-serif" text-anchor="middle">بعد الاطلاع على أعمالكم العظيمة وعطائكم المستمر، وتقرير اللجنة المتخصصة</text>
+  <text x="400" y="205" fill="#64748B" font-size="16" font-family="Cairo, sans-serif" text-anchor="middle">قررت Harvest College منح معاليكم درع شخصية العام واختياركم من</text>
+
+  <text x="400" y="260" fill="#0F382C" font-size="32" font-family="Cairo, sans-serif" font-weight="900" text-anchor="middle">أفضل 100 شخصية لعام 2023م</text>
+  <line x1="240" y1="275" x2="560" y2="275" stroke="#D4AF37" stroke-width="1" />
+
+  <text x="400" y="320" fill="#B91C1C" font-size="28" font-family="Cairo, sans-serif" font-weight="bold" text-anchor="middle">الدكتور / كاظم ياسين الحريب</text>
+  <text x="400" y="355" fill="#475569" font-size="15" font-family="Cairo, sans-serif" text-anchor="middle">تقديراً لمسيرته العلمية ومؤلفاته ورسالته في تنمية الأسرة وبناء المجتمع</text>
+
+  <g transform="translate(120, 395)">
+    <circle cx="40" cy="40" r="36" fill="url(#hGold)" />
+    <text x="40" y="45" fill="#78350F" font-size="11" font-weight="bold" text-anchor="middle">HARVEST</text>
+    <text x="40" y="58" fill="#78350F" font-size="9" font-weight="bold" text-anchor="middle">AWARD</text>
+  </g>
+  <g transform="translate(560, 420)">
+    <text x="80" y="30" fill="#1E293B" font-size="16" font-family="cursive" text-anchor="middle">Harvest Council</text>
+    <text x="80" y="50" fill="#64748B" font-size="13" font-family="sans-serif" text-anchor="middle">Certification Board</text>
+  </g>
+</svg>

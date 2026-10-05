@@ -1,0 +1,6 @@
+{
+  "name": "سيرة وأثر الشيخ الدكتور كاظم ياسين الحريب",
+  "description": "المنصة الرسمية للسيرة الذاتية والتكريم والأرشيف الرقمي المجتمعي لسماحة الشيخ الدكتور كاظم ياسين الحريب، رمز بلدة المنيزلة والأحساء.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

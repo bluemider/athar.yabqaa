@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTalaq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="goldTalaq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+  </defs>
+  <rect width="500" height="720" rx="12" fill="url(#bgTalaq)" />
+  <rect x="30" y="30" width="440" height="660" rx="8" fill="none" stroke="#D4AF37" stroke-width="2" />
+
+  <text x="250" y="150" fill="#94A3B8" font-size="18" font-family="Cairo, sans-serif" font-weight="600" text-anchor="middle">الاستشارات الأسرية والعلاقات الزوجية</text>
+  <text x="250" y="240" fill="#FFFFFF" font-size="50" font-family="Cairo, sans-serif" font-weight="900" text-anchor="middle">الطلاق</text>
+  <text x="250" y="310" fill="url(#goldTalaq)" font-size="56" font-family="Cairo, sans-serif" font-weight="900" text-anchor="middle">الصامت</text>
+  <text x="250" y="370" fill="#CBD5E1" font-size="20" font-family="Cairo, sans-serif" font-weight="700" text-anchor="middle">الأسباب، التداعيات، وسبل التعافي الأسري</text>
+
+  <!-- Symbolic Family/Bridge Vector -->
+  <g transform="translate(170, 420)">
+    <path d="M20 70 Q80 20 140 70" fill="none" stroke="#D4AF37" stroke-width="3" />
+    <circle cx="45" cy="45" r="12" fill="#38BDF8" />
+    <circle cx="115" cy="45" r="12" fill="#F472B6" />
+    <line x1="80" y1="30" x2="80" y2="75" stroke="#EF4444" stroke-width="2" stroke-dasharray="3 3" />
+  </g>
+
+  <line x1="100" y1="560" x2="400" y2="560" stroke="#334155" stroke-width="2" />
+  <text x="250" y="610" fill="#FFFFFF" font-size="22" font-family="Cairo, sans-serif" font-weight="800" text-anchor="middle">الدكتور كاظم ياسين الحريب</text>
+  <text x="250" y="645" fill="#94A3B8" font-size="14" font-family="Cairo, sans-serif" font-weight="600" text-anchor="middle">مستشار أسري ومدرب محترف في الكوتشينج</text>
+</svg>

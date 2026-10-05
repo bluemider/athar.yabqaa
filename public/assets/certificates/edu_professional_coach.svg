@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eduGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" fill="#FFFFFF" />
+  <rect x="25" y="25" width="750" height="510" rx="6" fill="none" stroke="#1E293B" stroke-width="2" />
+  <rect x="33" y="33" width="734" height="494" rx="4" fill="none" stroke="#991B1B" stroke-width="1.5" />
+
+  <!-- EDU Logo -->
+  <g transform="translate(70, 55)">
+    <rect x="0" y="0" width="65" height="65" rx="6" fill="#991B1B" />
+    <text x="32" y="28" fill="#FFFFFF" font-size="18" font-weight="900" text-anchor="middle">EDU</text>
+    <text x="32" y="44" fill="#FEF08A" font-size="9" font-weight="bold" text-anchor="middle">Business School</text>
+  </g>
+  
+  <text x="440" y="80" fill="#0F172A" font-size="22" font-family="Cairo, sans-serif" font-weight="bold" text-anchor="middle">أكاديمية إي دي يو لأعمال التدريب والتنمية البشرية</text>
+  <text x="440" y="105" fill="#64748B" font-size="14" font-family="Cairo, sans-serif" text-anchor="middle">EDU Education Business School - Professional Training Credentials</text>
+  <line x1="180" y1="120" x2="700" y2="120" stroke="#D4AF37" stroke-width="1.5" />
+
+  <text x="400" y="165" fill="#475569" font-size="17" font-family="Cairo, sans-serif" text-anchor="middle">تشهد الأكاديمية بأن المتدرب المستشار</text>
+  
+  <text x="400" y="220" fill="#991B1B" font-size="34" font-family="Cairo, sans-serif" font-weight="900" text-anchor="middle">كاظم ياسين الحريب</text>
+  <line x1="250" y1="235" x2="550" y2="235" stroke="#991B1B" stroke-width="1" opacity="0.5" />
+
+  <text x="400" y="280" fill="#0F172A" font-size="18" font-family="Cairo, sans-serif" text-anchor="middle">قد اجتاز بنجاح واقتدار الدورة التدريبية التخصصية في</text>
+  <text x="400" y="330" fill="#0F382C" font-size="26" font-family="Cairo, sans-serif" font-weight="900" text-anchor="middle">«إعداد المدرب المحترف في الكوتشينج»</text>
+  <text x="400" y="370" fill="#475569" font-size="16" font-family="Cairo, sans-serif" text-anchor="middle">وذلك لمدة 25 ساعة تدريبية والتي أقيمت في الفترة من 03 أغسطس وحتى 07 أغسطس 2020</text>
+
+  <!-- Barcode & Stamp -->
+  <g transform="translate(80, 420)">
+    <rect x="0" y="0" width="120" height="40" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1" />
+    <text x="60" y="25" fill="#0F172A" font-size="16" font-family="monospace" font-weight="bold" text-anchor="middle">862034</text>
+    <text x="60" y="55" fill="#64748B" font-size="11" font-family="sans-serif" text-anchor="middle">كود الاعتماد الدولي</text>
+  </g>
+
+  <g transform="translate(540, 420)">
+    <text x="80" y="20" fill="#1E293B" font-size="15" font-family="Cairo, sans-serif" font-weight="bold" text-anchor="middle">مدرب البرنامج: د/ عادل قباري</text>
+    <text x="80" y="45" fill="#64748B" font-size="13" font-family="Cairo, sans-serif" text-anchor="middle">المدير التنفيذي للأكاديمية</text>
+  </g>
+</svg>

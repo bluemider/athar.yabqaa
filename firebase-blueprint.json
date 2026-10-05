@@ -1,0 +1,186 @@
+{
+  "entities": {
+    "Submission": {
+      "title": "Community Submission",
+      "description": "User memories, condolences, or testimonies submitted to the memorial archive",
+      "type": "object",
+      "properties": {
+        "authorName": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 120,
+          "description": "Name of the submitter"
+        },
+        "relationship": {
+          "type": "string",
+          "maxLength": 150,
+          "description": "Relationship to Sheikh Kazim"
+        },
+        "message": {
+          "type": "string",
+          "minLength": 5,
+          "maxLength": 3000,
+          "description": "Memory, condolence, or tribute message"
+        },
+        "mediaUrl": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "Optional image or video URL attached to the submission"
+        },
+        "mediaType": {
+          "type": "string",
+          "enum": ["image", "video"],
+          "description": "Type of attached media"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "approved", "rejected"],
+          "description": "Moderation status of the submission"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Submission timestamp"
+        },
+        "approvedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Approval timestamp"
+        }
+      },
+      "required": ["authorName", "message", "status", "createdAt"]
+    },
+    "SiteContentDoc": {
+      "title": "Site Content Document",
+      "description": "Customizable platform archive content and section texts",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 64,
+          "description": "Identifier for the content bucket"
+        },
+        "content": {
+          "type": "string",
+          "maxLength": 500000,
+          "description": "Serialized JSON content payload"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last updated timestamp"
+        },
+        "updatedBy": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Email or UID of admin who saved the content"
+        }
+      },
+      "required": ["updatedAt"]
+    },
+    "AdminUser": {
+      "title": "Admin User",
+      "description": "Authorized administrators who can curate archive content and moderate submissions",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Firebase Authentication User ID"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 128,
+          "description": "Admin email address"
+        },
+        "role": {
+          "type": "string",
+          "enum": ["admin", "super_admin"],
+          "description": "Role level"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Creation timestamp"
+        }
+      },
+      "required": ["email", "role"]
+    },
+    "TimelineMilestoneDoc": {
+      "title": "Timeline Milestone Document",
+      "description": "Persistent individual timeline milestones with photo data",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Milestone identifier"
+        },
+        "period": {
+          "type": "string",
+          "maxLength": 100,
+          "description": "Period or date range"
+        },
+        "year": {
+          "type": "string",
+          "maxLength": 50,
+          "description": "Gregorian or Hijri year"
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Title of milestone"
+        },
+        "subtitle": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Subtitle or summary"
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 5000,
+          "description": "Detailed biographical description"
+        },
+        "mediaUrl": {
+          "type": "string",
+          "maxLength": 600000,
+          "description": "Photo URL or compressed image data URL"
+        },
+        "mediaCaption": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "Photo caption"
+        },
+        "order": {
+          "type": "number",
+          "description": "Display order index"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last updated timestamp"
+        }
+      },
+      "required": ["id", "title", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/submissions/{submissionId}": {
+      "schema": "Submission",
+      "description": "Collection of visitor community submissions, condolences, and memories"
+    },
+    "/site_content/{contentId}": {
+      "schema": "SiteContentDoc",
+      "description": "Dynamic archive configuration and site content persistence"
+    },
+    "/timeline_milestones/{milestoneId}": {
+      "schema": "TimelineMilestoneDoc",
+      "description": "Dedicated collection for persistent timeline milestones and uploaded photos"
+    },
+    "/admins/{adminId}": {
+      "schema": "AdminUser",
+      "description": "List of platform administrators"
+    }
+  }
+}
