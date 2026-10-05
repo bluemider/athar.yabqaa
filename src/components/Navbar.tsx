@@ -208,9 +208,13 @@ export const Navbar: React.FC<NavbarProps> = ({
             }}
             className="flex items-center gap-2.5 sm:gap-3.5 text-right group cursor-pointer focus:outline-none shrink-0 min-w-0"
           >
-            {/* Calligraphic Emblem */}
-            <div className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-[#D4AF37] rounded-full flex items-center justify-center text-[#D4AF37] bg-[#0A261E] shadow-md group-hover:scale-105 transition-transform shrink-0">
-              <span className="font-amiri font-bold text-xl sm:text-2xl text-[#D4AF37]">كـ</span>
+            {/* Calligraphic & Official Emblem */}
+            <div className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-[#D4AF37] rounded-full flex items-center justify-center overflow-hidden bg-[#0A261E] shadow-md group-hover:scale-105 transition-transform shrink-0">
+              <img
+                src="/pwa-192x192.png"
+                alt="سماحة الشيخ د. كاظم الحريب - رمز الخدمة والعطاء"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Title & Subtitles */}

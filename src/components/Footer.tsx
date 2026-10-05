@@ -45,8 +45,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenAdmin }) => {
           {/* Col 1: Identity & Description */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-sm bg-[#0F382C] border-2 border-[#D4AF37] p-0.5 shadow-md flex items-center justify-center">
-                <span className="font-amiri font-bold text-2xl text-[#D4AF37]">كـ</span>
+              <div className="w-12 h-12 rounded-full bg-[#0F382C] border-2 border-[#D4AF37] overflow-hidden shadow-md flex items-center justify-center shrink-0">
+                <img
+                  src="/pwa-192x192.png"
+                  alt="سماحة الشيخ د. كاظم الحريب"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white font-cairo">
