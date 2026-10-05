@@ -491,8 +491,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
 
               {/* Slide Counter Indicator */}
-              <div className="absolute top-4 right-4 bg-black/70 border border-[#D4AF37]/50 text-[#D4AF37] px-2.5 py-1 text-xs font-mono rounded-sm font-bold z-20">
-                {activeSlide + 1} / {heroImages.length}
+              <div
+                dir="rtl"
+                className="absolute top-4 right-4 bg-black/85 backdrop-blur-md border border-[#D4AF37] text-[#D4AF37] px-3 py-1 text-xs font-cairo rounded-sm font-bold z-20 flex items-center gap-1.5 shadow-lg select-none"
+              >
+                <span className="text-gray-300 font-normal">صورة</span>
+                <span className="text-white font-mono font-bold text-sm">{activeSlide + 1}</span>
+                <span className="text-gray-300 font-normal">من</span>
+                <span className="text-[#D4AF37] font-mono font-bold text-sm">{heroImages.length}</span>
               </div>
             </div>
           </div>

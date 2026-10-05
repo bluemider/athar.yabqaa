@@ -50,7 +50,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       },
       {
         id: "slide-2",
-        url: "/uploads/1791058621822_WhatsApp_Image_2026-09-12_at_10_05_57_PM.jpg",
+        url: "/assets/sheikh/sheikh_kazim_21.jpg",
         title: "بين أهالي ووجهاء بلدة المنيزلة الأوفياء",
         subtitle: "صورة لسماحة الشيخ مع وجيه وقائد من البلد بومصطفى العيد"
       },
@@ -62,15 +62,15 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       },
       {
         id: "slide-4",
-        url: "/uploads/1791059259506_cropped_photo.jpg",
+        url: "/assets/sheikh/sheikh_kazim_22.jpg",
         title: "مجالس العلماء ورجالات المجتمع",
-        subtitle: "صوره معا سماحته معا سمحاة السيد رضا محمد السلمان"
+        subtitle: "صورة مع سماحة السيد رضا محمد السلمان"
       },
       {
         id: "slide-5",
-        url: "/uploads/1791058714823_WhatsApp_Image_2026-08-09_at_6_57_12_PM__1_.jpg",
+        url: "/assets/sheikh/sheikh_kazim_23.jpg",
         title: "الأثر الباقي ونبراس الأجيال",
-        subtitle: "صورة معا سماحة السيد الأب الروحي للشيخ السيد عبدالله الموسوي"
+        subtitle: "صورة مع سماحة السيد الأب الروحي للشيخ السيد عبدالله الموسوي"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       title: "النشأة في قرية المنيزلة بالأحساء ومهد التقوى",
       subtitle: "أصالة البيئة الأحسائية والارتباط الوثيق بأهل المنيزلة الأوفياء",
       description: "وُلد ونشأ سماحة الشيخ الدكتور كاظم بن ياسين بن علي الحريب في بلدة المنيزلة المعطاءة بمحافظة الأحساء، وترعرع في كنف أسرة مؤمنة عُرفت بالصلاح وطيب السيرة. ومنذ نعومة أظفاره تشرب محبة أهل البيت (عليهم السلام) وروح الخدمة والارتباط بالأرض والمجتمع.",
-      mediaUrl: "/uploads/1791058227362_WhatsApp_Image_2026-09-05_at_9_00_51_PM.jpg",
+      mediaUrl: "/assets/sheikh/timeline_roots_munaizilah.jpg",
       mediaCaption: "سماحة الشيخ كاظم الحريب بين أهالي بلدة المنيزلة الأوفياء في لقاء مجتمعي حميم",
       iconName: "Home",
       highlights: [
@@ -153,7 +153,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       dateArabic: "",
       icon: "Home",
       images: [
-        "/uploads/1791058227362_WhatsApp_Image_2026-09-05_at_9_00_51_PM.jpg"
+        "/assets/sheikh/timeline_roots_munaizilah.jpg",
+        "/assets/sheikh/sheikh_kazim_21.jpg"
       ],
       order: 0,
       updatedAt: "2026-10-04T09:55:00.000Z"
@@ -164,7 +165,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       title: "الالتحاق بالحوزة العلمية وارتشاف المعارف الفقهية",
       subtitle: "تتلمذ على كبار فقهاء وأساتذة الحوزة في في قم ثم في الأحساء ",
       description: "سَلَكَ سماحتُه طريقَ طلبِ العلمِ الشرعيِّ مبكرًا، فالتحق في السادسة عشرة من عمره بالحوزة العلمية في قم المقدسة، حيث تميّز تميّزًا لافتًا، وأشاد به علماء قم لما عُرف عنه من قوّة الفهم والجدّ في طلب العلم. ثم أكمل دراسته في حوزة الأحساء، جامعًا بين الأصالة الفقهية والوعي بمقتضيات العصر.\n",
-      mediaUrl: "/uploads/1791058283441_WhatsApp_Image_2026-09-08_at_10_43_41_PM.jpg",
+      mediaUrl: "/assets/sheikh/timeline_hawza_studies.jpg",
       mediaCaption: "سماحة الشيخ في مجلس علمي وبحث حوزوي تخصصي مع ثلة من طلبة العلوم الدينية",
       iconName: "Scroll",
       highlights: [
@@ -183,8 +184,9 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       ],
       tags: [],
       images: [
-        "/uploads/1791058283441_WhatsApp_Image_2026-09-08_at_10_43_41_PM.jpg",
-        "/uploads/1791058290395_WhatsApp_Image_2026-08-09_at_1_08_17_PM.jpg"
+        "/assets/sheikh/timeline_hawza_studies.jpg",
+        "/assets/sheikh/sheikh_kazim_02.jpg",
+        "/assets/sheikh/sheikh_kazim_03.jpg"
       ],
       order: 1,
       updatedAt: "2026-10-04T09:55:00.000Z"
@@ -198,7 +200,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       subtitle: "مسيرةٌ قضائيةٌ وخدمةٌ للعدالة",
       role: "الصفة / الدور",
       description: "عمل سماحته في المحكمة الجعفرية، وأسهم في مسيرتها القضائية إلى جانب نخبة من أبرز القضاة والعلماء، منهم العلّامة حسن بوخمسين، وآية الله الشيخ محمد الهاجري، وفضيلة الشيخ محمد الويم، رحمهم الله، مستفيدًا من علمه الشرعي ودقته في الفهم في خدمة الناس وإرساء العدالة.",
-      mediaUrl: "/uploads/1791058309217_WhatsApp_Image_2026-09-05_at_9_32_58_PM.jpg",
+      mediaUrl: "/assets/sheikh/timeline_qadi_consultant.jpg",
       imageUrl: "",
       mediaCaption: "الشيخ كاظم الحريب خلال مسيرته في المحكمة الجعفرية، حيث جمع بين العلم الشرعي وخدمة المجتمع.",
       category: "community",
@@ -221,7 +223,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       iconName: "HeartHandshake",
       icon: "HeartHandshake",
       images: [
-        "/uploads/1791058309217_WhatsApp_Image_2026-09-05_at_9_32_58_PM.jpg"
+        "/assets/sheikh/timeline_qadi_consultant.jpg",
+        "/assets/sheikh/sheikh_kazim_04.jpg"
       ],
       order: 2,
       updatedAt: "2026-10-04T09:55:00.000Z"
@@ -232,7 +235,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       title: "إمامة الجماعة في مساجد البلد وخارجها",
       subtitle: "صوت الحق والموعظة الصادقة ومحراب الخشوع والتربية الروحية",
       description: "تولى إمامة الجماعة وإلقاء الدروس والخطب الدينية والتوجيهية في مسجد الإمام الجواد (عليه السلام) بالمنيزلة. ، وكان يعطي الدروس الأخلاقية والسلوكية لتزكية النفوس وبناء المجتمع المؤمن الواعي.ستولّى سماحته إمامة الجماعة في عدة مساجد داخل البلاد وخارجها؛ فمن المساجد داخل البلاد: مسجد الإمام المهدي، ومسجد الإمام الجواد، ومسجد الإمام الرضا. ومن المساجد خارج البلاد: مسجد الزهراء، ومسجد جويخ. ",
-      mediaUrl: "/uploads/1791058398696_WhatsApp_Image_2026-09-16_at_10_35_08_PM.jpg",
+      mediaUrl: "/assets/sheikh/timeline_mosque_pulpit.jpg",
       mediaCaption: "سماحة الشيخ الدكتور كاظم يلقي كلمته التوجيهية في رحاب مساجد البلد وخارجها",
       iconName: "Flame",
       highlights: [
@@ -242,7 +245,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       ],
       imageUrl: "",
       images: [
-        "/uploads/1791058398696_WhatsApp_Image_2026-09-16_at_10_35_08_PM.jpg"
+        "/assets/sheikh/timeline_mosque_pulpit.jpg",
+        "/assets/sheikh/sheikh_kazim_05.jpg"
       ],
       order: 3,
       updatedAt: "2026-10-04T09:55:00.000Z",
@@ -262,7 +266,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       title: "تأسيس وقيادة لجنة الإبداع والتطوير",
       subtitle: "رعاية طاقات الشباب واحتضان المتفوقين والمبدعين في المنيزلة",
       description: "أطلق سماحته لجنة الإبداع والتطوير في بلدة المنيزلة، لتكون حاضنةً ورائدة في خدمة المجتمع؛ حيث أولى اهتماماً بالغاً بفئة الشباب لتربيتهم وصقل مهاراتهم عبر تقديم الدورات التدريبية والتأهيلية، كما حرص على رعاية كبار السن والاهتمام بهم تقديرًا لمكانتهم، إلى جانب قيادته للجان بكل إخلاص وتوفير الدعم المعنوي للجميع.",
-      mediaUrl: "/uploads/1791058420583___________2026-09-09_214605.jpg",
+      mediaUrl: "/assets/sheikh/sheikh_kazim_15.jpg",
       mediaCaption: "سماحة الشيخ أثناء تكريم كوكبة من المتفوقين والمبدعين في مهرجان الإبداع والتطوير",
       iconName: "Sparkles",
       highlights: [
@@ -272,7 +276,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       ],
       imageUrl: "",
       images: [
-        "/uploads/1791058420583___________2026-09-09_214605.jpg"
+        "/assets/sheikh/sheikh_kazim_15.jpg",
+        "/assets/sheikh/sheikh_kazim_16.jpg"
       ],
       order: 4,
       updatedAt: "2026-10-04T09:55:00.000Z",
@@ -290,9 +295,9 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       id: "social-reconciliation",
       period: "إصلاح ذات البين والسلم الأهلي",
       title: "رائد المصالحات الأسرية وإصلاح ذات البين ",
-      "subtitle": "بلسم الجراح، وجسر التآلف بين العوائل والأفراد",
+      subtitle: "بلسم الجراح، وجسر التآلف بين العوائل والأفراد",
       description: "حظي سماحة الشيخ بمكانة وجدانية سامية جعلت منه المرجع الاجتماعي الأول في حل الخلافات الأسرية والعشائرية في المنيزلة ومحيطها. بقلبه الرحب وحكمته المستندة إلى القرآن الكريم وفنون الكوتشينج الأسري، تمكن من حل مئات النزاعات وإعادة الألفة إلى الأسر والبيوت.",
-      mediaUrl: "/uploads/1791058767197___________2026-09-09_214417.jpg",
+      mediaUrl: "/assets/sheikh/timeline_social_reconciliation.jpg",
       mediaCaption: "سماحة الشيخ متحدثاً في جلسة صلح مجتمعي وتأكيد على أواصر الإخاء والتسامح",
       iconName: "HeartHandshake",
       highlights: [
@@ -302,7 +307,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       ],
       imageUrl: "",
       images: [
-        "/uploads/1791058767197___________2026-09-09_214417.jpg"
+        "/assets/sheikh/timeline_social_reconciliation.jpg",
+        "/assets/sheikh/sheikh_kazim_17.jpg"
       ],
       order: 5,
       updatedAt: "2026-10-04T09:55:00.000Z",
@@ -332,7 +338,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       ],
       imageUrl: "",
       images: [
-        "/assets/certificates/doctorate_coaching_2018.svg"
+        "/assets/certificates/doctorate_coaching_2018.svg",
+        "/assets/certificates/professional_master_2020.svg"
       ],
       order: 6,
       updatedAt: "2026-10-04T09:55:00.000Z"
@@ -343,7 +350,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       title: "المؤلفات الفكرية ورسالة الكوتشينج والتنمية الأسرية",
       subtitle: "إرث معرفي مكتوب يضيء دروب الأجيال ويخلد فكر الشيخ",
       description: "ترك سماحته مكتبة ثرية من المؤلفات والأبحاث التخصصية التي تجمع بين الإرشاد الديني والأكاديمي، من أبرزها كتابه الشهير 'رحلة في عالم الكوتشينج - بين التجربة والتطبيق'، ودراساته حول 'المغالطات المنطقية' و'الطلاق الصامت' و'تصورات خاطئة تردعها حقائق دامغة'. أثر علمي راسخ سيظل ينبض بالحياة.",
-      mediaUrl: "/uploads/1791058441455_WhatsApp_Image_2026-09-16_at_10_32_16_PM.jpg",
+      mediaUrl: "/assets/books/rehlat_coaching.svg",
       mediaCaption: "غلاف كتاب 'رحلة في عالم الكوتشينج - بين التجربة والتطبيق' تأليف د. كاظم الحريب",
       iconName: "BookOpen",
       highlights: [
@@ -353,7 +360,9 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       ],
       imageUrl: "",
       images: [
-        "/uploads/1791058441455_WhatsApp_Image_2026-09-16_at_10_32_16_PM.jpg"
+        "/assets/books/rehlat_coaching.svg",
+        "/assets/books/tasawurat_khatiah.jpg",
+        "/assets/books/mughalatat.svg"
       ],
       order: 7,
       updatedAt: "2026-10-04T09:55:00.000Z"
@@ -367,7 +376,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       subtitle: "تأسيس لجنة «أثر يبقى» والرحيل",
       role: "الصفة / الدور",
       description: "بعد رحيل سماحته، تأسست لجنة «أثر يبقى» لتوثيق مسيرته وإبراز ما تركه من أثرٍ علمي واجتماعي وتربوي، وفاءً لمسيرته وحفظًا لإرثه للأجيال القادمة.",
-      mediaUrl: "/uploads/1791058457525___________2026-09-08_225659.jpg",
+      mediaUrl: "/assets/sheikh/timeline_athar_yabqaa.jpg",
       imageUrl: "",
       mediaCaption: "من آثار مسيرته التي استمرّت بعد رحيله، توثيق إرثه العلمي والاجتماعي عبر لجنة «أثر يبقى».",
       category: "community",
@@ -390,7 +399,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       iconName: "Flame",
       icon: "Flame",
       images: [
-        "/uploads/1791058457525___________2026-09-08_225659.jpg"
+        "/assets/sheikh/timeline_athar_yabqaa.jpg",
+        "/assets/sheikh/sheikh_kazim_26.jpg"
       ],
       order: 8,
       updatedAt: "2026-10-04T09:55:00.000Z"
@@ -597,7 +607,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       id: "book-mughalatat",
       title: "مغالطات منطقية",
       subtitle: "في الخطاب الحواري والفكر المعاصر",
-      coverUrl: "/uploads/1791060787510_____________.jpg",
+      coverUrl: "/assets/books/mughalatat.svg",
       author: "سماحة الشيخ الدكتور كاظم ياسين الحريب",
       publisher: "منشورات المركز التنموي والفكري",
       edition: "الطبعة الأولى",
@@ -609,7 +619,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
         "آداب المناظرة وقواعد الاستدلال السليم",
         "تطبيقات معاصرة في وسائل التواصل والإعلام"
       ],
-      coverImage: "/uploads/1791060787510_____________.jpg",
+      coverImage: "/assets/books/mughalatat.svg",
       description: "دراسة تحليلية تخصصية تسلط الضوء على المغالطات الصورية وغير الصورية التي تعتري الحوارات المجتمعية والنقاشات اليومية، وتقدم آليات وقواعد عقلية رصينة لتنقية الحوار والوصول إلى الحقائق بموضوعية وإنصاف.",
       topics: [
         "أنواع المغالطات المنطقية وأساليب كشفها",
@@ -624,7 +634,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       id: "book-talaq-samit",
       title: "الطلاق الصامت",
       subtitle: "الأسباب، التداعيات، وسبل التعافي الأسري",
-      coverUrl: "/uploads/1791060830298______________.jpg",
+      coverUrl: "/assets/books/talaq_samit.png",
       author: "الدكتور كاظم ياسين الحريب",
       publisher: "سلسلة برامج التنمية الأسرية والكوتشينج",
       edition: "إصدار توعوي",
@@ -636,7 +646,7 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
         "تقنيات كسر الجليد واستعادة لغة التفاهم والمصارحة",
         "روشتة عملية ووقائية لحماية العش الزوجي"
       ],
-      coverImage: "/uploads/1791060830298______________.jpg",
+      coverImage: "/assets/books/talaq_samit.png",
       description: "يعالج الكتاب ظاهرة الانفصال العاطفي والجفاف الوجداني بين الزوجين تحت سقف واحد (الطلاق العاطفي أو الصامت). يحلل الأسباب النفسية والاجتماعية الكامنة خلفه، ويضع خطة عملية وخطوات علاجية مستمدة من الكوتشينج الزوجي لإحياء المودة والسكينة في البيوت.",
       topics: [
         "مؤشرات وأعراض الطلاق الصامت في الحياة الزوجية",
@@ -655,8 +665,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       pages: 180,
       author: "د. كاظم الحريب",
       publisher: "دار صوت المؤلّف للنشر والتوزيع",
-      coverUrl: "/uploads/1791060973535________________.jpg",
-      coverImage: "/uploads/1791060973535________________.jpg",
+      coverUrl: "/assets/books/al_life_coaching.png",
+      coverImage: "/assets/books/al_life_coaching.png",
       summary: "كتاب يتناول مجال \"الكوتشينج الروحي\" كمنهجية لتطوير الذات والارتقاء بالوعي الإنساني، حيث يجمع بين التوجيه النفسي والروحي لمساعدة الفرد على فهم ذاته العميقة، وتحقيق التوازن الداخلي، والوصول إلى معاني أعمق في الحياة والاتصال الخالق.",
       description: "كتاب يتناول مجال \"الكوتشينج الروحي\" كمنهجية لتطوير الذات والارتقاء بالوعي الإنساني، حيث يجمع بين التوجيه النفسي والروحي لمساعدة الفرد على فهم ذاته العميقة، وتحقيق التوازن الداخلي، والوصول إلى معاني أعمق في الحياة والاتصال الخالق.",
       keyTopics: [
@@ -685,8 +695,8 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
       pages: 180,
       author: "د. كاظم الحريب",
       publisher: "دار صوت المؤلّف للنشر والتوزيع",
-      coverUrl: "/uploads/1791061092715_______________.jpg",
-      coverImage: "/uploads/1791061092715_______________.jpg",
+      coverUrl: "/assets/books/coaching_osari.png",
+      coverImage: "/assets/books/coaching_osari.png",
       summary: "كتاب متقدم في مجال الإرشاد والكوتشينج الأسري، يسلط الضوء على بناء الأسرة وتوجيه العلاقات الأسرية بين الأصالة والمعاصرة. يهدف الكتاب إلى مساعدة الأسر والأزواج والمربين على تعزيز التواصل الفعّال، وإدارة الخلافات الحياتية، وبناء بيئة أسرية متوازنة قائمة على الوعي والتفاهم والاحتواء.",
       description: "كتاب متقدم في مجال الإرشاد والكوتشينج الأسري، يسلط الضوء على بناء الأسرة وتوجيه العلاقات الأسرية بين الأصالة والمعاصرة. يهدف الكتاب إلى مساعدة الأسر والأزواج والمربين على تعزيز التواصل الفعّال، وإدارة الخلافات الحياتية، وبناء بيئة أسرية متوازنة قائمة على الوعي والتفاهم والاحتواء.",
       keyTopics: [
@@ -711,14 +721,14 @@ export const DEFAULT_SITE_CONTENT: SiteContent = {
     },
     {
       id: "book-1791061104555",
-      title: "كتاب جديد",
+      title: "كوتشينج التعافي من الخيانة",
       subtitle: "رحلة شفاء ووعي بعد الخيانة",
       year: "2025م",
       pages: 233,
       author: "د. كاظم الحريب",
       publisher: "دار صوت المؤلّف للنشر والتوزيع",
-      coverUrl: "/uploads/1791061145860__________________.jpg",
-      coverImage: "/uploads/1791061145860__________________.jpg",
+      coverUrl: "/assets/books/coaching_taafi.jpg",
+      coverImage: "/assets/books/coaching_taafi.jpg",
       summary: "كتاب يتناول القضية الحساسة للتخطي والشفاء بعد الصدمات الزوجية وتحديداً الخيانة. يقدم الكتاب خريطة طريق متكاملة تجمع بين الجانب النفسي والمهارات التوجيهية (الكوتشينج)، لمساعدة المتأثرين على تجاوز آلام الصدمة، واستعادة الثقة بالنفس والوعي الذاتي، وإعادة تشكيل القرارات المستقبلية بحكمة وهدوء.",
       description: "كتاب يتناول القضية الحساسة للتخطي والشفاء بعد الصدمات الزوجية وتحديداً الخيانة. يقدم الكتاب خريطة طريق متكاملة تجمع بين الجانب النفسي والمهارات التوجيهية (الكوتشينج)، لمساعدة المتأثرين على تجاوز آلام الصدمة، واستعادة الثقة بالنفس والوعي الذاتي، وإعادة تشكيل القرارات المستقبلية بحكمة وهدوء.",
       keyTopics: [

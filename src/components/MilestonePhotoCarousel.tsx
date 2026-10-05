@@ -113,14 +113,18 @@ export const MilestonePhotoCarousel: React.FC<MilestonePhotoCarouselProps> = ({
           {/* Top Bar: Multi-image badge & auto-play status */}
           <div className="flex items-center justify-between pointer-events-auto">
             {hasMultiple ? (
-              <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-sm border border-[#D4AF37]/60 text-xs font-bold font-cairo text-[#D4AF37] shadow-sm">
-                <Images className="w-3.5 h-3.5" />
-                <span>
-                  {currentIndex + 1} من {total} صور
-                </span>
+              <div
+                dir="rtl"
+                className="inline-flex items-center gap-1.5 text-xs bg-black/85 backdrop-blur-md px-2.5 py-1 rounded-sm border border-[#D4AF37]/60 text-[#D4AF37] select-none shadow-md"
+              >
+                <Images className="w-3.5 h-3.5 text-[#D4AF37]" />
+                <span className="text-gray-300 font-cairo font-normal">صورة</span>
+                <span className="text-white font-mono font-bold text-sm">{currentIndex + 1}</span>
+                <span className="text-gray-300 font-cairo font-normal">من</span>
+                <span className="text-[#D4AF37] font-mono font-bold text-sm">{total}</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#D4AF37] animate-pulse mx-0.5" />
-                <span className="text-[10px] text-gray-300 font-normal hidden sm:inline">
-                  {isHovered ? '(متوقف مؤقتاً)' : '(تلقائي كل 5 ثوانٍ)'}
+                <span className="text-[10px] text-gray-300 font-cairo font-normal hidden sm:inline">
+                  {isHovered ? '(متوقف مؤقتاً)' : '(تلقائي 5ث)'}
                 </span>
               </div>
             ) : (
